@@ -1,9 +1,10 @@
-#%%
+# %%
 inputfile = open('./day2-input.txt')
 lines = inputfile.readlines()
-tuplesList = [ tuple(i.split()) for i in lines ]
+tuplesList = [tuple([i.split()[0], int(i.split()[1])]) for i in lines]
 x = y = 0
-for i,j in tuplesList:
+# %%
+for i, j in tuplesList:
     j = int(j)
     if i.lower() == 'forward':
         x += j
