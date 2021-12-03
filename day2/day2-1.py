@@ -11,7 +11,3 @@ for i,j in tuplesList:
     elif i.lower() == 'up':
         y -= int(j)
 print(x*y)
-
-
-
-# %%
