@@ -4,10 +4,12 @@ lines = inputfile.readlines()
 tuplesList = [ tuple(i.split()) for i in lines ]
 x = y = 0
 for i,j in tuplesList:
+    j = int(j)
     if i.lower() == 'forward':
-        x += int(j)
+        x += j
     elif i.lower() == 'down':
-        y += int(j)
+        y += j
     elif i.lower() == 'up':
-        y -= int(j)
+        y -= j
 print(x*y)
+# %%
